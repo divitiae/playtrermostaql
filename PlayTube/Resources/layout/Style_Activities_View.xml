@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="visible"
+        app:cardCornerRadius="2dp"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="?attr/colorPrimary"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/ImageUser"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/no_profile_image_circle"
+                    android:scaleType="centerCrop" />
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="0dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/NameUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Homer J. Allen"
+                        android:textSize="16sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"  />
+                    <TextView
+                      android:id="@+id/TimeUser"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_vertical"
+                      android:text="18-February-2020"
+                      android:textSize="13sp"
+                      android:layout_marginTop="3dp"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                      android:textColor="?attr/colorSecondaryExtra" /> 
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/ContentAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:lineSpacingExtra="2dp"
+                android:text="Update v1.8 is released, you may check the changelog from admin panel"
+                android:textSize="14sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"  />
+            <ImageView
+                android:id="@+id/ImageAct"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imageplacholder" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/colorDivider" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <LinearLayout
+                    android:id="@+id/LikeActLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/IconLikeAct"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#AED581"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:text="ic" />
+                    <TextView
+                        android:id="@+id/CountLikeAct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="45 link"
+                        android:paddingTop="1dp"
+                        android:layout_marginStart="3dp"
+                        android:textSize="15sp"
+                        android:textColor="?attr/colorSecondaryExtra" />
+                </LinearLayout>
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="0dp" />
+                <LinearLayout
+                    android:id="@+id/DislikeActLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:layout_marginEnd="10dp" 
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                  <TextView
+                    android:id="@+id/IconDislikeAct"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#29B6F6"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:text="ic" />
+                  <TextView
+                    android:id="@+id/CountDislikeAct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="12 dislike"
+                    android:paddingTop="1dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="15sp"
+                    android:textColor="?attr/colorSecondaryExtra" /> 
+                </LinearLayout> 
+                <LinearLayout
+                  android:id="@+id/CommentActLayout"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="end|right"
+                  android:layout_marginEnd="10dp" 
+                  android:orientation="horizontal">
+                  <TextView
+                    android:id="@+id/IconCommentAct"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#29B6F6"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:text="ic" />
+                  <TextView
+                    android:id="@+id/CountCommentAct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="12 comment"
+                    android:paddingTop="1dp"
+                    android:layout_marginStart="3dp"
+                    android:textSize="15sp"
+                    android:textColor="?attr/colorSecondaryExtra" /> 
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

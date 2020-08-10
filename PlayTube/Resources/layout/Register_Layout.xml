@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mainpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:backgroundTint="#00000000"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:id="@+id/mainscrollView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@xml/login_background_shape">
+        <LinearLayout
+            android:id="@+id/mainLinearLayout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+        <!-- Here you can put your logo or brand name -->
+            <LinearLayout
+                android:id="@+id/mainLinearLayout"
+                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/logo"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="16dp" />
+            </LinearLayout>
+            <EditText
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:padding="8dp"
+                android:drawableStart="@drawable/ic_user"
+                android:maxLines="1"
+                android:textColorHint="#000"
+                android:textColor="#000"
+                android:hint="@string/Lbl_Username"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:id="@+id/usernamefield"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+            <View
+                android:background="?attr/colorDivider"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:padding="16dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+            <EditText
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:drawableStart="@drawable/ic_email"
+                android:maxLines="1"
+                android:textColorHint="#000"
+                android:hint="@string/Lbl_Email"
+                android:textColor="#000"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:id="@+id/emailfield" />
+            <View
+                android:background="?attr/colorDivider"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+              android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp" />
+            <EditText
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:drawableStart="@drawable/ic_action_key_circular"
+                android:maxLines="1"
+                android:textColorHint="#000"
+                android:hint="@string/Lbl_Password"
+                android:textColor="#000"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:id="@+id/passwordfield" />
+            <View
+                android:background="?attr/colorDivider"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+              android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp" />
+            <EditText
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:drawableStart="@drawable/ic_action_key_circular"
+                android:maxLines="1"
+                android:textColorHint="#000"
+                android:hint="@string/Lbl_ConfirmPassword"
+                android:textColor="#000"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:id="@+id/ConfirmPasswordfield" /> 
+            <View
+                android:background="?attr/colorDivider"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp" />
+			<EditText
+				android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:drawableStart="@drawable/ic_action_gender"
+                android:maxLines="1"
+                android:textColorHint="#000"
+                android:hint="@string/Lbl_Gender"
+                android:textColor="#000"
+                android:drawablePadding="12dp" 
+                android:ems="10" 
+                android:inputType="textEmailAddress"
+                android:id="@+id/genderfield" />
+            <View
+                android:background="?attr/colorDivider"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp" />
+
+			<LinearLayout
+				android:layout_marginTop="10dp"
+				android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:orientation="vertical" >
+				<LinearLayout
+					android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+		    	    android:layout_gravity="center"
+		    	    android:gravity="center"
+		            >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/termCheckBox"
+                    app:buttonTint="#000" />
+                <TextView
+                    android:text="@string/Lbl_I_agree_to_the"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/firstTermTextView"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+				    android:layout_gravity="center" />
+			
+				</LinearLayout> 
+
+				 <LinearLayout
+		        	android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+		        	android:layout_gravity="center"
+		        	android:gravity="center"
+					android:layout_marginTop="5dp">
+                <TextView
+                    android:text="@string/Terms_of_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/secTermTextView"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp"/>
+                <TextView
+                    android:text="@string/Privacy_Policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/secPrivacyTextView"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp" />
+		        </LinearLayout>
+
+			</LinearLayout>
+			  
+            <RelativeLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:layout_marginTop="10dp">
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:visibility="invisible"
+                    android:progressTint="@color/textIcon" />
+            </RelativeLayout>
+		
+         
+			<Button
+                android:background="@xml/background_signup"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:padding="14dp"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:text="@string/Lbl_Register"
+                android:textColor="@color/textIcon"
+                android:textSize="18sp"
+                android:clickable="true"
+                android:textAllCaps="false"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:id="@+id/signUpButton" /> 
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

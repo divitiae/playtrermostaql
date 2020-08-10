@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/card_pro_pic"
+        android:scaleType="centerCrop"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/username" 
+        android:textColor="?attr/colorSecondaryExtra"
+        android:textSize="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="allen1992"
+        android:layout_toEndOf="@id/card_pro_pic"
+        android:layout_width="wrap_content"
+        android:layout_weight="0"
+        android:textStyle="bold"
+        android:paddingBottom="2dp" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:textColor="?attr/colorSecondaryExtra"
+        android:textSize="11dp"
+        android:gravity="start"
+        android:layout_toEndOf="@id/username"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="0dp"
+        android:text="12:30 PM"
+        android:layout_width="wrap_content"
+        android:layout_weight="0"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="0dp" />
+    <com.luseen.autolinklibrary.AutoLinkTextView
+        android:id="@+id/active"
+        android:layout_toEndOf="@id/card_pro_pic"
+        android:layout_below="@+id/username"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        android:textColor="?attr/colorSecondaryExtra"
+        android:textSize="13dp"
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi My name is jony"
+        android:layout_weight="1"
+        android:textIsSelectable="true" />
+    <RelativeLayout
+        android:id="@+id/actionlayout"
+        android:layout_width="wrap_content"
+        android:padding="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/card_pro_pic"
+        android:layout_below="@+id/active"
+        android:gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/LikeButton">
+            <ImageView
+                android:id="@+id/Likeicon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="13dp"
+                android:src="@drawable/icon_likefilled_video_vector"
+                android:tint="#777777"
+                android:layout_gravity="center"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/LikeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="?attr/colorSecondaryExtra"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toEndOf="@+id/LikeButton"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/UnLikeButton">
+            <ImageView
+                android:id="@+id/UnLikeicon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/icon_likefilled_video_vector"
+                android:tint="#777777"
+                android:rotation="180"
+                android:layout_gravity="center"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/UnLikeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginBottom="1dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="?attr/colorSecondaryExtra"
+                android:text="0"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/UnLikeButton"
+            android:id="@+id/ReplyButton">
+            <TextView
+                android:id="@+id/ReplyIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:includeFontPadding="false"
+                android:textColor="?attr/colorSecondaryExtra"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Ic" />
+            <TextView
+                android:id="@+id/RepliesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="?attr/colorSecondaryExtra"
+                android:text="0"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_toEndOf="@id/card_pro_pic"
+        android:layout_below="@+id/actionlayout"
+        android:background="?attr/colorDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp" />
+</RelativeLayout>

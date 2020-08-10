@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:id="@+id/root"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:theme="@style/ToolbarTheme"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="@drawable/linear_gradient_drawable"
+            android:elevation="2dp"></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title"
+                    android:textSize="19sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageBlog"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imageplacholder"
+                android:visibility="visible" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/ClockIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:gravity="start|center"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:text="IC"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="?attr/colorSecondaryExtra" />
+                <TextView
+                    android:id="@+id/DateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:gravity="start|center"
+                    android:layout_marginStart="5dp"
+                    android:maxLines="1"
+                    android:textSize="15sp"
+                    android:text="Date"
+                    android:textColor="?attr/colorSecondaryExtra" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:id="@+id/LikeButton"
+                    android:gravity="end">
+                    <TextView
+                        android:id="@+id/LikeIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start|center"
+                        android:maxLines="1"
+                        android:textSize="18sp"
+                        android:text="IC"
+                        android:layout_marginStart="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="?attr/colorSecondaryExtra" />
+                    <TextView
+                        android:id="@+id/LikeCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start|center"
+                        android:maxLines="1"
+                        android:textSize="15sp"
+                        android:text="0"
+                        android:layout_marginStart="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="?attr/colorSecondaryExtra" />
+                    <TextView
+                        android:id="@+id/UnlikeIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start|center"
+                        android:maxLines="1"
+                        android:textSize="18sp"
+                        android:text="IC"
+                        android:layout_marginStart="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="?attr/colorSecondaryExtra" />
+                    <TextView
+                        android:id="@+id/UnlikeNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:gravity="start|center"
+                        android:maxLines="1"
+                        android:textSize="15sp"
+                        android:text="0"
+                        android:layout_marginStart="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                        android:textColor="?attr/colorSecondaryExtra" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/CategoryName"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Category :TRAVEL"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="?attr/colorSecondaryExtra" />
+            <WebView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/LocalWebView" />
+            <!--likes layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/views"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="views"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="?attr/colorSecondaryExtra" />
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+                <ImageButton
+                    android:id="@+id/more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="?attr/colorSecondaryExtra"
+                    app:srcCompat="@xml/ic_more_vert" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/colorDivider" />
+            <!--Article Comments-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/Comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/Lbl_Comments"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="?attr/colorSecondaryExtra" />
+                <TextView
+                    android:id="@+id/LoadMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/primary"
+                    android:textSize="12sp"
+                    android:text="@string/Lbl_ViewMore" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimary"
+                android:padding="5dp">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:layoutDirection="ltr" />
+                <ViewStub
+                    android:id="@+id/viewStub"
+                    android:inflatedId="@+id/subView"
+                    android:layout_marginTop="35dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout="@layout/EmptyStateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp" />
+                <ProgressBar
+                    android:layout_centerInParent="true"
+                    android:id="@+id/sectionProgress"
+                    android:indeterminate="true"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="#999"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:foregroundGravity="center"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/commentonButtom"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="?attr/colorPrimary"
+                android:layout_marginBottom="0dp"
+                android:layout_alignParentBottom="true"
+                android:layoutDirection="ltr">
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/emojiicon"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/Smile"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp" />
+                <developer.semojis.Helper.EmojiconEditText
+                    android:id="@+id/EmojiconEditText5"
+                    android:layout_alignWithParentIfMissing="@+id/emojiicon"
+                    android:layout_toEndOf="@+id/emojiicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="6dp"
+                    android:textSize="14dp"
+                    android:hint="@string/Lbl_YourComment"
+                    app:emojiconSize="23sp"
+                    android:textColor="?attr/colorSecondaryExtra"
+                    android:textColorHint="?attr/colorSecondaryExtra"
+                    android:backgroundTint="@android:color/transparent"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:maxLines="6"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="0dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="70dp" />
+                <at.markushi.ui.CircleButton
+                    android:layout_alignWithParentIfMissing="@+id/EmojiconEditText5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    app:cb_color="@color/accent"
+                    app:cb_pressedRingWidth="9dip"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_action_send"
+                    android:id="@+id/sendButton"
+                    android:translationY="2dp"
+                    android:layoutDirection="ltr" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

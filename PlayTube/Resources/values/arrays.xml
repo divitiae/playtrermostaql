@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+  <string-array name="themeListArray">
+    <item>@string/Lbl_Light</item>
+    <item>@string/Lbl_Dark</item>
+    <item>@string/Lbl_SetByBattery</item>
+  </string-array>
+
+  <!--Don't Translate this Id-->
+  <string-array name="themeEntryArray">
+    <item>light</item>
+    <item>dark</item>
+    <item>default</item>
+  </string-array>
+ 
+</resources>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+    android:id="@+id/menu_AddWatchLater"
+    android:title="@string/Lbl_Addto_watchlater"/>
+
+  <item
+    android:id="@+id/menu_AddPlaylist"
+    android:title="@string/Lbl_Addto_playlist"/>
+
+  <item
+    android:id="@+id/menu_Share"
+    android:title="@string/Lbl_Share"/>
+
+</menu>

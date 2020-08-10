@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+  <!--Profile SECTION-->
+  <PreferenceCategory android:key="Account_Profile_key" android:title="@string/Lbl_Account_and_Profile"  >
+
+    <Preference
+      android:key="editChannal_key"
+      android:title="@string/Lbl_edit_MyChannal" />
+  
+    <Preference
+      android:key="monetization_key"
+      android:title="@string/Lbl_Withdrawals" />
+ 
+    <Preference
+      android:key="goPro_key"
+      android:title="@string/Lbl_Go_Pro"/>
+ 
+    <Preference
+      android:key="verification_key"
+      android:title="@string/Lbl_verification"/>
+ 
+    <Preference
+      android:key="blocked_key"
+      android:title="@string/Lbl_BlockedUsers" />
+
+  </PreferenceCategory>
+
+<!--Security SECTION-->
+<PreferenceCategory android:layout="@xml/divider"/>
+<PreferenceCategory  android:key="SecurityAccount_key" android:title="@string/Lbl_Security" >
+
+  <Preference
+    android:key="editPassword_key"
+    android:title="@string/Lbl_Password"
+    android:summary="@string/Lbl_Change_your_password" />
+
+  <Preference
+    android:key="Twofactor_key"
+    android:title="@string/Lbl_TwoFactor"  />
+
+  <Preference
+    android:key="ManageSessions_key"
+    android:title="@string/Lbl_ManageSessions"  />
+
+</PreferenceCategory>
+
+<!--Theme SECTION-->
+<PreferenceCategory android:layout="@xml/divider" /> 
+<PreferenceCategory  android:key="Theme_key"  android:title="@string/Lbl_Display" >
+
+  <Preference
+    android:key="Night_Mode_key"
+    android:title="@string/Lbl_Theme" />
+
+</PreferenceCategory>
+
+<!--General SECTION-->
+<PreferenceCategory android:layout="@xml/divider" />
+<PreferenceCategory android:key="CategoryGeneral_key"  android:title="@string/Lbl_General" >
+
+  <android.support.v7.preference.SwitchPreferenceCompat
+    android:title="@string/Lbl_PictureInPicture"
+    android:summary="@string/Lbl_PictureInPictureSubTitle"
+    android:key="picture_in_picture_key"
+    app:iconSpaceReserved="false"
+    style="@style/SwitchCompatTheme"
+    android:defaultValue="false" />
+
+</PreferenceCategory>
+ 
+  <!--Privacy SECTION-->
+  <PreferenceCategory android:layout="@xml/divider" />
+  <PreferenceCategory  android:key="History_Privacy_key" android:title="@string/Lbl_History_Privacy" >
+
+    <Preference
+      android:key="ClaerHistory_key"
+      android:title="@string/Lbl_claer_History"
+      android:summary="@string/Lbl_claer_watchedHistory"/>
+    
+    <Preference
+      android:id="@+id/Clear_Cache_key"
+      android:key="Clear_Cache_key"
+      android:title="@string/Lbl_Clear_Cache"/>
+    
+  </PreferenceCategory>
+   
+  <!--Support SECTION-->
+  <PreferenceCategory android:layout="@xml/divider"/>
+  <PreferenceCategory android:key="Support_key" android:title="@string/Lbl_Support">
+
+    <Preference
+      android:key="help_key"
+      android:title="@string/Lbl_Help"/>
+
+    <Preference
+      android:key="Termsofuse_key"
+      android:title="@string/Lbl_Termsofuse"/>
+
+    <Preference
+      android:key="About_key"
+      android:title="@string/Lbl_About_App"/>
+
+    <PreferenceCategory android:layout="@xml/divider"/>
+
+    <Preference
+      android:key="deleteaccount_key"
+      android:title="@string/Lbl_DeleteAccount" />
+
+    <Preference
+      android:key="logout_key"
+      android:title="@string/Lbl_Logout" />
+
+  </PreferenceCategory>
+  
+</PreferenceScreen>

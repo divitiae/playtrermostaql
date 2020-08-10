@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="ExtraTheme">
+    <attr name="colorSecondaryExtra" format="reference|color"/>
+    <attr name="colorBackground" format="reference|color"/>
+    <attr name="colorDivider" format="reference|color"/>
+    <attr name="colorReact" format="reference|color"/>
+    <attr name="ShapeCircleColor1" format="reference|color"/>
+    <attr name="ShapeCircleColor2" format="reference|color"/>
+    <attr name="ShapeCircleColor3" format="reference|color"/>
+    <attr name="ShapeCircleColor4" format="reference|color"/>
+    <attr name="ShapeCircleColor5" format="reference|color"/>
+    <attr name="ShapeCircleColor6" format="reference|color"/>
+  </declare-styleable>
+
+  <declare-styleable name="TemplateView">
+    <attr name="gnt_template_type" format="reference"/>
+  </declare-styleable>
+
+  <declare-styleable name="CircleButton">
+    <attr name="cb_color" format="color" />
+    <attr name="cb_pressedRingWidth" format="dimension" />
+  </declare-styleable>
+
+</resources>
