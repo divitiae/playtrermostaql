@@ -120,8 +120,8 @@ namespace PlayTube
 
         //Bypass Web Erros 
         ///*********************************************************
-        public static bool TurnTrustFailureOnWebException = false;
-        public static bool TurnSecurityProtocolType3072On = false;
+        public static bool TurnTrustFailureOnWebException = true;
+        public static bool TurnSecurityProtocolType3072On = true;
 
         //*********************************************************
         public static bool RenderPriorityFastPostLoad = true;
