@@ -128,7 +128,7 @@ namespace PlayTube
 
         //Error Report Mode
         //*********************************************************
-        public static bool SetApisReportMode = true;
+        public static bool SetApisReportMode = false;
 
         public static bool CompressImage = false;
         public static int AvatarSize = 60; 
