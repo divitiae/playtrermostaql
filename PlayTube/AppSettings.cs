@@ -13,7 +13,7 @@ namespace PlayTube
     public static class AppSettings
     {
         //Main Settings >>>>> 
-        public static string TripleDesAppServiceProvider = "XzpkswtsEcWvKZJFBYbe5fTylXy6QFbaxacr6zqgVCWUyVHAA18bcOcerZmfaEfwD2S21WogsTvd6S5JH7s9rNIMxKYobQFaPUKzug3v1E7MjPLN+7TA//mTjkny88KFn0AmqKdufap1GF0EWo3BDDaPCAjZe8xCNMfAa/DrPTqIpSulOZM13o6etdF8IX/9K570FFctkArRGzlpphuSzrmTW9QC7vwlbCZY2vcws+HqGJWDiXWD8fs1NDw7Er42";
+        public static string TripleDesAppServiceProvider = "XzpkswtsEcWvKZJFBYbe5fTylXy6QFbaxacr6zqgVCWUyVHAA18bcOcerZmfaEfwlExiswDfRpYp1lhmyBMXMXrxXLxoVetRuGMyuUOlvXNWCYE5/nZIngEsuklDoo+D4KYiXAaYNkuiO2XoYO3rk6dzWpzvlPnA84u2WU+/SzFwxKvGKxhM7LnUoYHHiZhkrdU/l7Sp+7xB1FvW1MyA94TlpaIxeH58KG39xOcnmhPShfAXDw0gdVvKTdgsjC4n";
         
         //********************************************************* 
         public static string ApplicationName = "VOX Kick";
